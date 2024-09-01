@@ -1,0 +1,85 @@
+.headerIndex {
+  background-image: url(../../img/clothes.jpg);
+  background-size: cover; /*para que ocupe la totalidad de la imagen*/
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*cuando se haga scroll que quede fijo*/
+  height: 95vh;
+  position: relative;
+}
+
+.oscurecerFondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+.flexBasico {
+  flex-direction: column;
+}
+
+.botonesHeader {
+  border: none;
+  width: 8rem;
+  padding: 0.4rem 1rem;
+  margin: 0.4rem 0;
+}
+
+.botonesHeader {
+  transition: transform 0.3s;
+}
+.botonesHeader:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  max-width: 20rem;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.flexBasico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .contenedorGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .contenedorGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .cardTotal {
+    grid-column: 1/3;
+    max-width: unset; /*para que no tenga en cuenta el max que defini*/
+  }
+}
+@media only screen and (min-width: 700px) {
+  .cardTotal {
+    grid-column: unset;
+  }
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

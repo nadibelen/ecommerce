@@ -1,0 +1,48 @@
+.headerIndex {
+    background-image: url(../../img/clothes.jpg);
+    background-size: cover; /*para que ocupe la totalidad de la imagen*/
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /*cuando se haga scroll que quede fijo*/
+    height: 95vh;
+
+    position: relative;
+}
+
+.oscurecerFondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.66);
+}
+
+.flexBasico {
+    @extend %flexBasico;
+    flex-direction: column;
+}
+
+.botonesHeader {
+    border: none;
+    width: 8rem;
+    padding: .4rem 1rem;
+    margin: .4rem 0;
+}   
+
+.botonesHeader{
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.card {
+    @extend %cardPrenda;
+    max-width: 20rem;
+    padding: 1rem;
+}
+
+.card h3 {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
